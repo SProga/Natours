@@ -1,0 +1,92 @@
+/* #keyframes then give the animation a name */
+/*for Browser performance and best practices only using opacity and transform properties in the keyframes */
+
+@-webkit-keyframes moveInLeft {
+  0% {
+    /* before the animation starts */
+    opacity: 0;
+    transform: translateX(-10rem);
+    /*remember that the x axis goes from right to left */
+    /*remember that the y axis goes from the top to the bottom */
+  }
+  80% {
+    transform: translateX(10rem);
+  }
+  100% {
+    /*when the animation ends */
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    /* before the animation starts */
+    opacity: 0;
+    transform: translateX(-10rem);
+    /*remember that the x axis goes from right to left */
+    /*remember that the y axis goes from the top to the bottom */
+  }
+  80% {
+    transform: translateX(1rem);
+  }
+  100% {
+    /*when the animation ends */
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  80% {
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(5rem);
+  }
+  80% {
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -4,12 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
-    "devserver":"live-server",
-    "start":"npm-run-all --parallel watch:sass devserver",
-
-
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel watch:sass devserver",
     "compile:sass": "node-sass sass/main.scss css/style.comp.css",
     "concat:css": "concat -o css/style.concat.css css/linea.css css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.concat.css -o css/style.prefix.css",
@@ -25,5 +22,8 @@
     "node-sass": "^5.0.0",
     "npm-run-all": "^4.1.5",
     "postcss-cli": "^8.3.1"
+  },
+  "dependencies": {
+    "live-server": "^1.2.1"
   }
 }
